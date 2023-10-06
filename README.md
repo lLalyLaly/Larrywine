@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larry's</title>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/javascript" src="js/bootstrap.min.js">
 
+    <style type="text-css">
+        .map-container{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+      }
+      .map-container iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+      } 
+    </style>
     <style type="text/css">
         .index-cor{
-            background: brown;
-            border: solid 1px brown;
-            
+            background: #3f0c0c;
+            border: solid 1px rgb(63, 12, 12);
+            font-family:Arial, Helvetica, sans-serif;       
+            font-size: 25px;
+            color: #e7ab5c;
         }
 
     </style>
@@ -22,46 +40,217 @@
     </style>
     <style type="text/css">
         .backcontainer{
-            background-color: rgb(36, 23, 4);
+            background-color: #140d03;
+        }
+    </style>
+    <style type="text/css">
+        .rodape{
+            background: #140d03;
+            font-family:Arial, Helvetica, sans-serif;       
+            font-size: 25px;
+            color: #e7ab5c;
+            
         }
     </style>
 </head>
-<body class="back">
-    <section class="container" >
-    </section>
-    <section>
-        <div class="backcontainer container">
+<body class="back"> 
+    <header>
+        <div class="backcontainer container mt-3 text-center">
              <img class="img-fluid mx-auto" src="imagens/semfundo.png" alt="capa">
         </div>
-    </section>
+        <div class="backcontainer mt-3 container text-center ">
+            <nav class="navbar navbar-light d-sm-none justify-content-end">
+                <div class="container-fluid justify-content-end">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+            </nav>
+            <nav class="nav">
+                <a class="nav-link" href="#topo">Home</a>
+                <a class="nav-link" href="#Vinhos">Vinhos</a>
+                <a class="nav-link" href="#Empresa">Empresa</a>
+                <a class="nav-link" href="#Contato">Contato</a>
+                <a class="nav-link" href="#Trabalhe Conosco">Trabalhe Conosco</a>
+            </nav>
+        </div>  
+    </header>   
     <section>
-        <div style="border: solid 2px;" class="backcontainer container">
-            <div class="row index-cor">
-                <div class="col">
-                    Vinhos
-                </div>
-                <div class="col">
-                    Presentes
-                </div>
-                <div class="col">
-                    Fale Conosco
-                </div>
-                <div class="col">
-                    Sobre Nós
-                </div>
-                <div class="col">
-                    Trabalhe Conosco
-                </div>
+        <div class="container backcontainer text-center">
+            <div class="">
+                <div id="meucarrossel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagens/fluid.jpg" class="d-block w-100" alt="test">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagens/mesauva.png" class="d-block w-100" alt="test">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagens/vinholog.jpg" class="d-block w-100" alt="test">
+                      </div>
+                    </div>
+                   
+                    <a class="carousel-control-prev" href="#meucarrossel" role="button" data-bs-slide="carousel-control-prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#meucarrossel" role="button" data-bs-slide="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </a>
+                  </div>
+
             </div>
         </div>
     </section>
-    <section>
-        <div class="container backcontainer">
+    <h1 class="container" id="Vinhos">Vinhos</h1>
+    <section class="destaque">
+        <div class="container mt-5 mb-5">
             <div class="row">
-                <img class="img-fluid" src="imagens/fluid.jpg" alt="capa">
+                <div class="col-6 col-sm-3 text-center">
+                    <img src="images/.png" class="d-block mx-auto" alt="destaque">
+                    <h4 class="cor-tema mt-3">Título</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                    <img src="images/brain.png" class="d-block mx-auto" alt="destaque">
+                    <h4 class="cor-tema mt-3">Título</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                    <img src="images/brain.png" class="d-block mx-auto" alt="destaque">
+                    <h4 class="cor-tema mt-3">Título</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                    <img src="images/brain.png" class="d-block mx-auto" alt="destaque">
+                    <h4 class="cor-tema mt-3">Vinho Tinto Pinot Noir</h4>
+                    <p>750 ml.</p>
+                    <p>Preço a Conferir</p>
+    
+                </div>
             </div>
+        </div>
+    
+    </section>    
+
+    
+    
+    <hr class="container index-cor">
+    
+
+    
+    <h1 class="container justify-content-center" id="Empresa">Sobre Nós</h1>
+    <section class="banner-topo">
+        <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 order-2 order-sm-1">
+                <img src="imagens/laly.jpeg" width="250px" class="img-destaque d-block mx-auto mt-3" alt="laly">
+            </div>
+            <div class="col-12 col-sm-6 order-sm-2 align-self-center">
+                <h1 class="cor-tema">Larissa Trindade Rocha</h1>
+                <p>Meu interesse sempre foi desde criança com jogos de video game e querer melhorar o mundo de alguma forma. É pra mim uma honra estar onde estou me esforçando e apredendo aos poucos a cada dia espero que eu possa ser uma engenheira de software algum dia.</p>
+                <a href="#" class="btn btn-bungary rounded-pill btn-lg">Saiba Mais</a>
+            </div>  
+        </div>
+        </div>
+    </section>
+    
+
+    <hr class="index-cor container">
+
+    <h1 class="text-center " id="Contato">Fale Conosco/Contato</h1>
+    <section class="container">
+        <div class="row col-6 container align-items-start mt-3">
+            <form action="">
+                <div>
+                    <label for="input-name" class="form-label">Seu Nome</label>
+                    <input id="input-name" required class="form-control" type="text" name="nome">
+                </div>
+                <div>
+                    <label for="input-email" class="form-label">E-mail</label>
+                    <input id="input-email" required class="form-control" type="email" name="email">
+                </div>
+                <div>
+                    <label for="input-msg" class="form-label">Mande Sua Mensagem Aqui:</label>
+                    <textarea class="form-control" name="Escreva Sua Mensagem" id="input-msg" cols="100" rows="10"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-success mt-3"  type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
     </section>
 
+    <hr class="container index-cor">
+
+    <h1 class="text-center container " id="Trabalhe Conosco">Trabalhe Conosco</h1>
+    
+    <section>
+        <div class="container justify-content-center">
+            <form class="row g-3" >
+                <div class="col-md-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="col-md-3">
+                <label for="inputPassword" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <div class="col-7">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua xxxx, numero">
+                </div>
+                <div class="col-7">
+                <label for="inputAddress2" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, Casa, Bloco">
+                </div>
+                <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Escolha...</option>
+                    <option>...</option>
+                </select>
+                </div>
+                <div class="col-md-3">
+                <label for="inputZip" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Confirmo as informações acima
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+            </form>
+        </div>
+    </section>
+    <hr class="container">
+    
+    <footer class="rodape">
+        <div class="container justify-content-center">
+            <div class="row">
+                <h4>Endereço</h4>
+                <p>Endereço Rua XXX, Igara - Guarulhos / SP</p>
+            </div>
+        </div>
+        <div id="map-container-google-2" class="z-depth-1-half map-container container justify-content-center" style="height: 500px">
+            <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              style="border:0" allowfullscreen></iframe>
+          </div>
+    </footer>
 </body>
 </html>
